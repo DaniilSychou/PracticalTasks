@@ -3,7 +3,7 @@ from loader.json_parser import BaseJsonLoader
 
 class StudentsLoader(BaseJsonLoader):
     """Реализацияя чтения файла students.json"""
-    def load(self, file_name):
+    def load(self, file_name: str):
         data = self.read_json(file_name)
         return [
             {

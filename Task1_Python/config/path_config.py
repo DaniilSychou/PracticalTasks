@@ -18,8 +18,8 @@ class PathConfig:
     file_name_stud: str
     data_dir: Path
     output_dir: Path
-    stud_path: Path
-    room_path: Path
+    stud_path: str   # <- строка, URL
+    room_path: str   # <- строка, URL
 
     @classmethod
     def from_env(cls) -> "PathConfig":
@@ -31,8 +31,9 @@ class PathConfig:
                 file_name_stud=os.environ["FILE_NAME_STUD"],
                 data_dir=(BASE_DIR / os.environ["DATA_DIR"]).resolve(),
                 output_dir=(BASE_DIR / os.environ["OUTPUT_DIR"]).resolve(),
-                stud_path=(BASE_DIR / os.environ["STUD_PATH"]).resolve(),
-                room_path=(BASE_DIR / os.environ["ROOM_PATH"]).resolve(),
+                stud_path=os.environ["STUD_PATH"],  # оставляем строкой
+                room_path=os.environ["ROOM_PATH"],  # оставляем строкой
             )
         except KeyError as e:
             raise RuntimeError(f"Missing env variable: {e.args[0]}")
+

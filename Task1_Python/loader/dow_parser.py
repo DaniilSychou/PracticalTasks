@@ -1,20 +1,24 @@
+from traceback import print_tb
 
 import wget
 import logging
-import os
+from pathlib import Path
+
+from numpy import dtype
+
 from config.path_config import PathConfig
 
 
 class Loader:
-    """Класс создания парсера с выбором файла"""
+    """Класс загрузки файлов"""
     def __init__(self, pc: PathConfig):
         self.pc = pc
-        os.makedirs(self.pc.data_dir, exist_ok=True)
+        self.pc.data_dir.mkdir(parents=True, exist_ok=True)
 
     @staticmethod
     def get_url() -> str:
         try:
-            logging.info('Введите ссылку на файл:')
+            logging.info("Введите ссылку на файл:")
             url = input().strip()
             if not url:
                 raise ValueError("URL не может быть пустым")
@@ -30,30 +34,39 @@ class Loader:
             logging.error("Ошибка ввода: %s", e)
             raise
 
-    def download_file(self, url, file_name):
+    def download_file(self, url: str, file_name: str) -> Path | None:
         try:
-            path = os.path.join(self.pc.data_dir, file_name)
-            wget.download(url, path)
-            logging.info(f'Файл {file_name} скачан и сохранён в {path}')
+            path: Path = self.pc.data_dir / file_name
+            wget.download(url, str(path))  # ⬅ здесь преобразуем Path в строку
+            logging.info("Файл %s скачан и сохранён в %s", file_name, path)
             return path
         except Exception as e:
-            logging.warning(f'Ошибка при скачивании {file_name}: {e}')
+            logging.error("Ошибка при скачивании %s: %s", file_name, e)
             return None
 
     def import_files(self):
         logging.info("Выберите файл для скачки")
         logging.info("1: Студенты (students)")
         logging.info("2: Аудитории (rooms)")
-        index = int(input("Ваш выбор: "))
+
+        try:
+            index = int(input("Ваш выбор: "))
+        except ValueError:
+            logging.warning("Введено не число")
+            return None
 
         match index:
             case 1:
-                url = self.get_url()
-                return self.download_file(url, self.pc.file_name_stud)
+                return self.download_file(
+                    self.get_url(),
+                    self.pc.file_name_stud
+                )
 
             case 2:
-                url = self.get_url()
-                return self.download_file(url, self.pc.file_name_rooms)
+                return self.download_file(
+                    self.get_url(),
+                    self.pc.file_name_rooms
+                )
 
             case _:
                 logging.warning("Неверный выбор")

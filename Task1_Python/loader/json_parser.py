@@ -8,7 +8,7 @@ class BaseJsonLoader(ABC):
         self.data_dir = data_dir
 
     def read_json(self, file_name):
-        with open(self.data_dir / file_name, encoding="utf-8") as f:
+        with open(self.data_dir / str(file_name), encoding="utf-8") as f:
             return json.load(f)
 
     @abstractmethod

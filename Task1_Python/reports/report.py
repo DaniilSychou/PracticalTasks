@@ -7,7 +7,7 @@ class Report:
     """Класс экспорта данных в файл"""
     def __init__(self, pc: PathConfig):
         self.pc = pc
-        os.makedirs(self.pc.output_dir, exist_ok=True)
+        self.pc.output_dir.mkdir(parents=True, exist_ok=True)
 
         self.exporters = {
             "json": json_report.JsonReporter(),
