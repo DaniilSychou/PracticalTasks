@@ -1,0 +1,38 @@
+services:
+  spark_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Task4_Spark
+    volumes:
+      - .:/app
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_NAME}
+      PYSPARK_PYTHON: python3 # Явно указываем Spark использовать python3
+    depends_on:
+      db:
+        condition: service_healthy # Ждем полной готовности базы
+    ports:
+      - "4040:4040"
+
+  db:
+    image: postgres:15-alpine
+    container_name: db
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    healthcheck: # Проверка готовности базы
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

@@ -1,14 +1,14 @@
 from queries import (
-    queri1, queri2, queri3,
-    queri4, queri5, queri6, queri7
+    query1, query2,
+    query3, query4, query5, query6, query7
 )
 
 QUERIES = {
-    "queri1": queri1,
-    "queri2": queri2,
-    "queri3": queri3,
-    "queri4": queri4,
-    "queri5": queri5,
-    "queri6": queri6,
-    "queri7": queri7,
+    "query1": query1,
+    "query2": query2,
+    "query3": query3,
+    "query4": query4,
+    "query5": query5,
+    "query6": query6,
+    "query7": query7,
 }

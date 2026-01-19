@@ -18,7 +18,12 @@ const_props = {"user": os.getenv('DB_USER'),
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 LOG_DIR = BASE_DIR / "logs"
-LOG_DIR.mkdir(exist_ok=True)
+LOG_DIR.mkdir(parents=True, exist_ok=True)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+)
 
 # Create separate loggers
 error_logger = logging.getLogger("error_logger")

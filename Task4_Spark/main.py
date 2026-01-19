@@ -7,22 +7,22 @@ from config.queries_list import QUERIES
 
 def main(selected_queries):
     try:
+        results_logger.info("MAIN FUNCTION STARTED")
         # Запуск Spark
         spark = ss.get_spark(app_name="Task4_Spark_App")
         results_logger.info("Spark session started")
-
-        # Загрузка всех таблиц
-        ds = dbp.load_all_tables(spark, url=const_url, props=const_props)
-        results_logger.info("All tables loaded successfully")
 
         # Выполнение выбранных запросов
         for q_name in selected_queries:
             query_module = QUERIES.get(q_name)
             if query_module:
                 results_logger.info(f"Running {q_name}...")
-                query_module.get_queri_results(ds) 
+                query_module.get_queri_results() 
             else:
                 error_logger.error(f"Query {q_name} not found")
+
+        results_logger.info("MAIN FUNCTION FINISHED")
+        print("__name__ =", __name__)
 
     except Exception as e:
         error_logger.error(f"An error occurred: {str(e)}", exc_info=True)
