@@ -1,0 +1,13 @@
+{"timestamp":"2026-01-27T06:54:32.727300Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T06:56:21.025430Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T06:56:53.257383Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T06:57:24.065131Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T06:57:55.265429Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T06:58:26.230351Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T06:59:00.486374Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T06:59:35.985418Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T07:00:07.002553Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T07:00:38.172717Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T07:01:10.871943Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T07:01:42.238221Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-27T07:02:13.066452Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}

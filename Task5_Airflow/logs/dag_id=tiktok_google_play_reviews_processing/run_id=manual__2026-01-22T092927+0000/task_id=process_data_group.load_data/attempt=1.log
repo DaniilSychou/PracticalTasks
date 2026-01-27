@@ -1,0 +1,23 @@
+{"timestamp":"2026-01-22T09:29:38.831567Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T09:29:38.835544Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T09:29:38.981342Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:29:38.989328Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:29:38.992117Z","level":"info","event":"Current task name:process_data_group.load_data","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:29:38.992941Z","level":"info","event":"Dag name:tiktok_google_play_reviews_processing","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:29:38.978646Z","level":"info","event":"===== load_data started =====","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":96}
+{"timestamp":"2026-01-22T09:29:38.978988Z","level":"info","event":"Python: 3.12.12 (main, Jan 13 2026, 09:45:04) [GCC 12.2.0]","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":97}
+{"timestamp":"2026-01-22T09:29:38.979359Z","level":"info","event":"Путь: /opt/airflow/data/tiktok_google_play_reviews.csv","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":98}
+{"timestamp":"2026-01-22T09:29:38.992465Z","level":"info","event":"Существует: True","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":99}
+{"timestamp":"2026-01-22T09:29:38.996810Z","level":"info","event":"Размер: 80,589,608 байт","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":100}
+{"timestamp":"2026-01-22T09:29:38.997287Z","level":"info","event":"Попытка encoding = utf-8","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":107}
+{"timestamp":"2026-01-22T09:29:39.490821Z","level":"error","event":"Skipping line 50536: expected 10 fields, saw 11","logger":"task.stderr"}
+{"timestamp":"2026-01-22T09:29:39.491544Z","level":"error","event":"","logger":"task.stderr"}
+{"timestamp":"2026-01-22T09:29:40.313317Z","level":"error","event":"Skipping line 126806: expected 10 fields, saw 11","logger":"task.stderr"}
+{"timestamp":"2026-01-22T09:29:40.317082Z","level":"error","event":"","logger":"task.stderr"}
+{"timestamp":"2026-01-22T09:29:43.444416Z","level":"info","event":"УСПЕХ! encoding=utf-8, строк: 307,037","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":117}
+{"timestamp":"2026-01-22T09:29:44.478387Z","level":"info","event":"XCom push выполнен (head 10000 строк)","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":138}
+{"timestamp":"2026-01-22T09:29:44.478716Z","level":"info","event":"===== load_data finished =====","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":139}
+{"timestamp":"2026-01-22T09:29:44.651890Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-22T09:29:44.745285Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:29:44.746134Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:29:44.749209Z","level":"info","event":"Task operator:<Task(PythonOperator): process_data_group.load_data>","logger":"task.stdout"}

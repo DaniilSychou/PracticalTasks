@@ -1,0 +1,16 @@
+{"timestamp":"2026-01-22T09:42:27.327535Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T09:42:27.331755Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T09:42:27.503521Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:42:27.511275Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:42:27.512942Z","level":"info","event":"Current task name:branch_check_file_empty","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:42:27.513800Z","level":"info","event":"Dag name:tiktok_google_play_reviews_processing","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:42:27.538768Z","level":"info","event":"Размер: 80,589,608 байт","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":63}
+{"timestamp":"2026-01-22T09:42:27.540734Z","level":"info","event":"Done. Returned value was: process_data_group","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-22T09:42:27.541075Z","level":"info","event":"Branch into process_data_group","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"branch.py","lineno":44}
+{"timestamp":"2026-01-22T09:42:27.541979Z","level":"info","event":"Expanding task group process_data_group into ['process_data_group.load_data']","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"branch.py","lineno":72}
+{"timestamp":"2026-01-22T09:42:27.544607Z","level":"info","event":"Following branch {'process_data_group.load_data'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":146}
+{"timestamp":"2026-01-22T09:42:27.546167Z","level":"info","event":"Skipping tasks [('log_empty_file', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":185}
+{"timestamp":"2026-01-22T09:42:27.616241Z","level":"info","event":"Skipping downstream tasks.","logger":"task","filename":"task_runner.py","lineno":1019}
+{"timestamp":"2026-01-22T09:42:27.731305Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:42:27.731912Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:42:27.732526Z","level":"info","event":"Task operator:<Task(BranchPythonOperator): branch_check_file_empty>","logger":"task.stdout"}

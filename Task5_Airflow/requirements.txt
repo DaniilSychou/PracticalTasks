@@ -1,0 +1,4 @@
+apache-airflow-providers-mongo>=1.0.0
+pandas>=2.0.0
+pymongo>=4.0.0
+dnspython>=2.0.0

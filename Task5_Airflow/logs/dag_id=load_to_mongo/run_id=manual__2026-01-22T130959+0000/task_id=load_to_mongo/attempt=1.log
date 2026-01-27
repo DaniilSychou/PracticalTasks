@@ -1,0 +1,14 @@
+{"timestamp":"2026-01-22T13:10:04.040757Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T13:10:04.048751Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/load_to_mongo_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T13:10:04.406680Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T13:10:04.409721Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T13:10:04.411644Z","level":"info","event":"Current task name:load_to_mongo","logger":"task.stdout"}
+{"timestamp":"2026-01-22T13:10:04.412294Z","level":"info","event":"Dag name:load_to_mongo","logger":"task.stdout"}
+{"timestamp":"2026-01-22T13:10:04.476172Z","level":"info","event":"Mongo extras: {'authSource': 'admin', 'ssl': False}","logger":"unusual_prefix_433406b4d65375f1aba09a623b72c26f5cedf5ba_load_to_mongo_dag","filename":"load_to_mongo_dag.py","lineno":32}
+{"timestamp":"2026-01-22T13:10:04.477121Z","level":"info","event":"ssl/tls: False (<class 'bool'>)","logger":"unusual_prefix_433406b4d65375f1aba09a623b72c26f5cedf5ba_load_to_mongo_dag","filename":"load_to_mongo_dag.py","lineno":33}
+{"timestamp":"2026-01-22T13:10:04.603349Z","level":"info","event":"Чтение CSV: /opt/airflow/data/processed_tiktok_reviews.csv (размер 80,489,461 байт)","logger":"unusual_prefix_433406b4d65375f1aba09a623b72c26f5cedf5ba_load_to_mongo_dag","filename":"load_to_mongo_dag.py","lineno":46}
+{"timestamp":"2026-01-22T13:10:10.240684Z","level":"info","event":"Прочитано строк: 307,057","logger":"unusual_prefix_433406b4d65375f1aba09a623b72c26f5cedf5ba_load_to_mongo_dag","filename":"load_to_mongo_dag.py","lineno":71}
+{"timestamp":"2026-01-22T13:10:10.242795Z","level":"info","event":"Колонки: ['reviewId', 'userName', 'userImage', 'content', 'score', 'thumbsUpCount', 'reviewCreatedVersion', 'at', 'replyContent', 'repliedAt']","logger":"unusual_prefix_433406b4d65375f1aba09a623b72c26f5cedf5ba_load_to_mongo_dag","filename":"load_to_mongo_dag.py","lineno":72}
+{"timestamp":"2026-01-22T13:10:22.701670Z","level":"info","event":"Подготовлено операций: 307,057","logger":"unusual_prefix_433406b4d65375f1aba09a623b72c26f5cedf5ba_load_to_mongo_dag","filename":"load_to_mongo_dag.py","lineno":103}
+{"timestamp":"2026-01-22T13:48:14.025690Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2026-01-22T13:48:19.434080Z","level":"error","event":"Task killed!","logger":"task"}

@@ -1,0 +1,18 @@
+{"timestamp":"2026-01-22T09:57:07.741508Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T09:57:07.749317Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/processing_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T09:57:07.832636Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:57:07.838391Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:57:07.839145Z","level":"info","event":"Current task name:process_data_group.load_data","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:57:07.839669Z","level":"info","event":"Dag name:tiktok_google_play_reviews_processing","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:57:07.837727Z","level":"info","event":"===== load_data START =====","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":80}
+{"timestamp":"2026-01-22T09:57:07.838088Z","level":"info","event":"Путь: /opt/airflow/data/tiktok_google_play_reviews.csv","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":81}
+{"timestamp":"2026-01-22T09:57:07.839683Z","level":"info","event":"size: 80,589,608 байт","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":82}
+{"timestamp":"2026-01-22T09:57:11.826976Z","level":"info","event":"Прочитано строк: 307,057","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":92}
+{"timestamp":"2026-01-22T09:57:11.827457Z","level":"info","event":"Колонки: ['reviewId', 'userName', 'userImage', 'content', 'score', 'thumbsUpCount', 'reviewCreatedVersion', 'at', 'replyContent', 'repliedAt']","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":93}
+{"timestamp":"2026-01-22T09:57:14.102467Z","level":"info","event":"Сохранено в /opt/airflow/data/temp_after_load.parquet","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":100}
+{"timestamp":"2026-01-22T09:57:14.153936Z","level":"info","event":"XCom push key='temp_file' выполнен, значение: /opt/airflow/data/temp_after_load.parquet","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":104}
+{"timestamp":"2026-01-22T09:57:14.178099Z","level":"info","event":"Тестовый XCom push 'test_key' выполнен","logger":"unusual_prefix_40fda0045520240a21505445fb37fb7e6499b6a7_processing_dag","filename":"processing_dag.py","lineno":108}
+{"timestamp":"2026-01-22T09:57:14.269894Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-22T09:57:14.298551Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:57:14.299671Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-22T09:57:14.300656Z","level":"info","event":"Task operator:<Task(PythonOperator): process_data_group.load_data>","logger":"task.stdout"}
