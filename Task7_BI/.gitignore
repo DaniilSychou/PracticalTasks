@@ -3,7 +3,7 @@
 *.env
 .env.*
 
-# Task6_Snowflake cache
+# Task7_BI cache
 __pycache__/
 *.pyc
 *.pyo
